@@ -66,13 +66,13 @@ public class Album {
     public int getPlayingTime(Song[] songs) {
         int totalPLayTime = 0;
         for(int i = 0; i<songs.length; i++){
-            totalPLayTime += songs.getDuration[i];
+            totalPLayTime += songs[i].getDuration();
         }
 
         return totalPLayTime;
     }
 
-    public String getPlayTrack(int track) {
+    public String getPlayTrack(int track,Song[] songs) {
         String trackPlay = "";
         if(track <1 || track > 5){
             JOptionPane.showMessageDialog(null,"An invalid track number was Supplied","Bad Track Number",
@@ -80,19 +80,19 @@ public class Album {
         }
         else {
             if (track == 1){
-                System.out.println("Now PLaying " + songs.getTitle[0]);
+                System.out.println("Now PLaying " + songs[0]);
             }
             if (track == 2){
-                System.out.println("Now PLaying " + songs.getTitle[1]);
+                System.out.println("Now PLaying " + songs[1]);
             }
             if (track == 3){
-                System.out.println("Now PLaying " + songs.getTitle[2]);
+                System.out.println("Now PLaying " + songs[2]);
             }
             if (track == 4){
-                System.out.println("Now PLaying " + songs.getTitle[3]);
+                System.out.println("Now PLaying " + songs[3]);
             }
             if (track == 5){
-                System.out.println("Now PLaying " + songs.getTitle[4]);
+                System.out.println("Now PLaying " + songs[4]);
             }
         }
         return trackPlay;
@@ -102,7 +102,7 @@ public class Album {
     public String toString() {
         return "Album " +
                 "name " + getName() +
-                "tracks " + Arrays.toString(tracks) +
+                "tracks " + Arrays.toString(getTracks()) +
                 "producer " + getProducer() + '\'' +
                 "releaseYear " + getReleaseYear();
     }

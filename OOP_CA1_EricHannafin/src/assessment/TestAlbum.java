@@ -39,7 +39,9 @@ public class TestAlbum {
 
 
 //        output += String.format("%-25s%-9s%-25s%-9s%-25s",album.getName(),album.getProducer(),album.getReleaseYear(),
-//                album.getNumberofTracks(),getTotalPLayingTime,);
+//                album.getNumberofTracks(),getTotalPlayingTime);
+
+      //  output += String.format("%-25s%-9s%-25s%-9s%-25s", album);
 
         textArea.append(output);
 
