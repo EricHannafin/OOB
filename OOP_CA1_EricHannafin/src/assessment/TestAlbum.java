@@ -24,22 +24,22 @@ public class TestAlbum {
         Album album = new Album("Now that's what I Call Music 98", songs,"Universal Music",2016);
 
         JTextArea textArea = new JTextArea();
-        Font fond = new Font("Monospaced",Font.PLAIN,12);
-        textArea.setFont(fond);
+        Font font = new Font("Monospaced",Font.PLAIN,12);
+        textArea.setFont(font);
 
         textArea.setText(String.format("%-25s%-9s%-25s%-9s%-25s", "Name","Producer","ReleaseYear",
                 "Number of Tracks", "Total PLaying Time"));
 
         String output = "";
-//
+
+       output += String.format("%-25s%-9s%-25s%-9s%-25s",album.getName(),album.getProducer(),album.getReleaseYear(),
+               album.getNumberofTracks(songs),album.getPlayingTime(songs));
+
+        //
 //        for(int i = 0; i<songs.length;i++){
 //
 //            output += "Array Contents " + songs[i];
 //        }
-
-
-//        output += String.format("%-25s%-9s%-25s%-9s%-25s",album.getName(),album.getProducer(),album.getReleaseYear(),
-//                album.getNumberofTracks(),getTotalPlayingTime);
 
       //  output += String.format("%-25s%-9s%-25s%-9s%-25s", album);
 
