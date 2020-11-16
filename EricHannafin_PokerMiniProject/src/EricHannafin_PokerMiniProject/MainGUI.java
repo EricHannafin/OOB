@@ -37,6 +37,8 @@ public class MainGUI  {
         TextFieldEventHandler handler = new TextFieldEventHandler();
         startAmount.addActionListener(handler);
 
+
+
         frame.setVisible(true);
 
     }
