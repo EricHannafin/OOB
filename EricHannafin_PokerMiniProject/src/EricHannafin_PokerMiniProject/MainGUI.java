@@ -12,7 +12,6 @@ import java.awt.event.*;
 public class MainGUI extends JFrame  {
 
     JTextField startAmount;
-    private JLabel label1;
     private ImageIcon imageMain;
 
     public MainGUI() {
@@ -23,29 +22,35 @@ public class MainGUI extends JFrame  {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(800,400);
         frame.setLocationRelativeTo(null);
-        frame.getContentPane().setBackground(Color.green);
+        frame.getContentPane().setBackground(Color.decode("#006763"));
 
         ImageIcon image = new ImageIcon("pokerChips.png");
         frame.setIconImage(image.getImage());
 
-        JLabel promptLabel = new JLabel("<html>Welcome to Texas Hold'em poker! Please enter the amount of money you would" +
-                " \nlike to lose and hit enter when you are ready to play!</html>",4);
-        promptLabel.setLocation(5000, 5000);
+        JLabel mainTextLabel = new JLabel("<html><font size = 3><b><i>Welcome to Texas Hold'em poker! Please enter the amount of money you would" +
+                " \nlike to lose and hit enter when you are ready to play!<i><b></font></html>",4);
+        mainTextLabel.setLocation(5000, 5000);
         JPanel panel1 = new JPanel();
-        panel1.add(promptLabel);
+        panel1.setBackground(Color.decode("#006763"));
+        panel1.add(mainTextLabel);
         frame.add(panel1);
 
         startAmount = new JTextField(5);
-
-        frame.add(startAmount);
+        JPanel panel3 = new JPanel();
+        panel3.add(startAmount);
+        panel3.setBackground(Color.decode("#006763"));
+        frame.add(panel3);
         TextFieldEventHandler handler = new TextFieldEventHandler();
         startAmount.addActionListener(handler);
 
         JLabel imageLabel = new JLabel();
-        imageLabel.setLocation(200, 200);
-        imageLabel.setPreferredSize(new Dimension(700, 300));
+       // imageLabel.setLocation(200, 200);
+        imageLabel.setPreferredSize(new Dimension(740, 270));
         imageLabel.setIcon(new ImageIcon("pokerImage.jpg"));
-        frame.add(imageLabel);
+        JPanel panel2 = new JPanel();
+        panel2.setBackground(Color.decode("#006763"));
+        panel2.add(imageLabel);
+        frame.add(panel2);
 
 
 
