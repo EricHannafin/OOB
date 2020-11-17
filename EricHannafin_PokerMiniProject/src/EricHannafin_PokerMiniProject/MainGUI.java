@@ -22,6 +22,7 @@ public class MainGUI extends JFrame  {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(800,400);
         frame.setLocationRelativeTo(null);
+        frame.setResizable(false);
         frame.getContentPane().setBackground(Color.decode("#006763"));
 
         ImageIcon image = new ImageIcon("pokerChips.png");
@@ -65,6 +66,7 @@ public class MainGUI extends JFrame  {
 
         new MainGUI();
     }
+
         private class TextFieldEventHandler implements ActionListener{
 
             public void actionPerformed(ActionEvent e)
