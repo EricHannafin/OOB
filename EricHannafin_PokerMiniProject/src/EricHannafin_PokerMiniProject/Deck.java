@@ -5,26 +5,20 @@ import java.util.ArrayList;
 import java.util.Random;
 
 public class Deck {
+    // creating a deck of cards named deck
+    private ArrayList<Card> deck;
 
-      private ArrayList<Card> cards;
-
-      public Deck()
-      {
-            for(int a =0; a<=3; a++)
+    Deck() {
+        deck = new ArrayList<Card>();
+        for(int i=0; i<4; i++)
+        {
+            for(int j=1; j<=13; j++)
             {
-                  for(int b =0; b<=12;b++)
-                  {
-                        cards.add(drawRandomCard());
-                  }
-                  cards.addAll(cards);
+                deck.add(new Card(i,j));
             }
+        }
+    }
 
-      }
 
-      public Card drawRandomCard()
-      {
-            Random generator = new Random();
-            int index = generator.nextInt(cards.size());
-            return cards.remove(index);
-      }
+
 }

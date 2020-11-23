@@ -9,12 +9,12 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 
-public class MainGUI extends JFrame  {
+public class Game extends JFrame  {
 
     JTextField startAmount;
     private ImageIcon imageMain;
 
-    public MainGUI() {
+    public Game() {
 
         JFrame frame = new JFrame("Texas Hold'em");
         FlowLayout flowLayout = new FlowLayout();
