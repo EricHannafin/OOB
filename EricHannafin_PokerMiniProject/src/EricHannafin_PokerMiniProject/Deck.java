@@ -5,20 +5,20 @@ import java.util.ArrayList;
 import java.util.Random;
 
 public class Deck {
-    // creating a deck of cards named deck
-    private ArrayList<Card> deck;
+    // an array that can hold 52 cards
+    private Card deck[];
 
-    Deck() {
-        deck = new ArrayList<Card>();
-        for(int i=0; i<4; i++)
-        {
-            for(int j=1; j<=13; j++)
-            {
-                deck.add(new Card(i,j));
+    public Deck () {
+        deck = new Card[52];
+        int i = 0;
+        for (int suit = 0; suit <= 3; suit++) {
+            for (int rank = 1; rank <= 13; rank++) {
+                deck[i] = new Card(suit, rank);
+                i++;
             }
+
         }
+
+
     }
-
-
-
 }

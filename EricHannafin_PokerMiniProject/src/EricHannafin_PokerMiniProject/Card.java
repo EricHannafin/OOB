@@ -34,10 +34,7 @@ public class Card
     }
 
 
-    public int getRank()
-    {
-        return rank;
-    }
+    public int getRank() { return rank; }
 
     public int getSuit()
     {
@@ -47,34 +44,32 @@ public class Card
 
     public String rankToString() {
         switch (rank) {
-            case 1:
+            case TWO:
                 return "2";
-            case 2:
+            case THREE:
                 return "3";
-            case 3:
+            case FOUR:
                 return "4";
-            case 4:
+            case FIVE:
                 return "5";
-            case 5:
-                return "5";
-            case 6:
+            case SIX:
                 return "6";
-            case 7:
+            case SEVEN:
                 return "7";
-            case 8:
+            case EIGHT:
                 return "8";
-            case 9:
+            case NINE:
                 return "9";
-            case 10:
+            case TEN:
                 return "10";
-            case 11:
+            case JACK:
                 return "Jack";
-            case 12:
+            case QUEEN:
                 return "Queen";
-            case 13:
-               return   "King";
-            case 14:
-                return  "Ace";
+            case KING:
+                return "KING";
+            case ACE:
+               return   "ACE";
         }
         return null;
     }
