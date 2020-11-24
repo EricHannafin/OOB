@@ -1,24 +1,22 @@
 package EricHannafin_PokerMiniProject;
 
 import java.lang.reflect.Array;
-import java.util.ArrayList;
-import java.util.Random;
+import java.util.*;
 
 public class Deck {
-    // an array that can hold 52 cards
-    private Card deck[];
+
+    private ArrayList<Card> deck;
 
     public Deck () {
-        deck = new Card[52];
-        int i = 0;
-        for (int suit = 0; suit <= 3; suit++) {
-            for (int rank = 1; rank <= 13; rank++) {
-                deck[i] = new Card(suit, rank);
-                i++;
+        deck = new ArrayList<>();
+        for (int i = 0; i <= 3; i++) {
+            for (int j = 0; j < 13; j++) {
+                deck.add(new Card(i, j));
             }
-
         }
+    }
 
-
+    public void printDeck(){
+        System.out.println("\n" + deck);
     }
 }

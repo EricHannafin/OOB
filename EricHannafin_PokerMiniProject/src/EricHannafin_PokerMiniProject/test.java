@@ -1,14 +1,20 @@
 package EricHannafin_PokerMiniProject;
 
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+
 public class test {
 
     public static void main(String[] args) {
-       Card test1 = new Card(5,3);
 
-        System.out.println(test1);
+        Card card1 = new Card(2,3);
+        System.out.println(card1);
 
-       Deck test2 = new Deck();
+        Deck deck1 = new Deck();
+        deck1.printDeck();
 
-        System.out.println(test2);
+
     }
 }
+
