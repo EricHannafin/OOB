@@ -17,6 +17,6 @@ public class Deck {
     }
 
     public void printDeck(){
-        System.out.println("\n" + deck);
+        System.out.println(deck);
     }
 }

@@ -29,7 +29,7 @@ public class Card
 
     public String toString()
     {
-        return ranks[rank] + " of " + suits[suit];
+        return "\n" + ranks[rank] + " of " + suits[suit];
 
     }
 
