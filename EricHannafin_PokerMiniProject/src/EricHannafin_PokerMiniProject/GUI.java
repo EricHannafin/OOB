@@ -9,12 +9,11 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 
-public class Game extends JFrame  {
+public class GUI extends JFrame  {
 
     JTextField startAmount;
-    private ImageIcon imageMain;
 
-    public Game() {
+    public GUI() {
 
         JFrame frame = new JFrame("Texas Hold'em");
         FlowLayout flowLayout = new FlowLayout();
@@ -45,7 +44,6 @@ public class Game extends JFrame  {
         startAmount.addActionListener(handler);
 
         JLabel imageLabel = new JLabel();
-       // imageLabel.setLocation(200, 200);
         imageLabel.setPreferredSize(new Dimension(740, 270));
         imageLabel.setIcon(new ImageIcon("pokerImage.jpg"));
         JPanel panel2 = new JPanel();
@@ -60,7 +58,7 @@ public class Game extends JFrame  {
         frame.setVisible(true);
 
     }
-
+        // johns code
         private class TextFieldEventHandler implements ActionListener{
 
             public void actionPerformed(ActionEvent e)

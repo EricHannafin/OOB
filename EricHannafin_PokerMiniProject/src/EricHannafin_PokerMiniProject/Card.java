@@ -1,8 +1,5 @@
 package EricHannafin_PokerMiniProject;
 
-import java.util.Arrays;
-import java.util.Random;
-
 public class Card
 {
 

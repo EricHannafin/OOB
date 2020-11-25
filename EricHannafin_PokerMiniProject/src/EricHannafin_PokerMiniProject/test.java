@@ -1,20 +1,18 @@
 package EricHannafin_PokerMiniProject;
 
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
+import java.util.ArrayList;
 
 public class test {
 
+    private ArrayList<Card> hand;
+
     public static void main(String[] args) {
-
-        Card card1 = new Card(2,3);
-        System.out.println(card1);
-
-        Deck deck1 = new Deck();
-        deck1.printDeck();
+        // GUI game1 = new GUI();
 
 
+         Deck deck1 = new Deck();
+         deck1.printDeck();
+        
     }
 }
 

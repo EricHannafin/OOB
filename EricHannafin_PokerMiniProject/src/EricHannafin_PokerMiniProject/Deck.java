@@ -1,11 +1,11 @@
 package EricHannafin_PokerMiniProject;
 
-import java.lang.reflect.Array;
 import java.util.*;
 
 public class Deck {
 
     private ArrayList<Card> deck;
+    int firstCard = 0;
 
     public Deck () {
         deck = new ArrayList<>();
@@ -14,9 +14,18 @@ public class Deck {
                 deck.add(new Card(i, j));
             }
         }
+        //Shuffle the deck after it is created
+        Collections.shuffle(deck);
+    }
+    //Draw the top card from the deck and increment
+    public Card dealCard() {
+
+        return deck.get(firstCard++);
     }
 
+    //Prints the deck of cards
     public void printDeck(){
         System.out.println(deck);
     }
+
 }
