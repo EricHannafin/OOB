@@ -6,7 +6,6 @@ import java.awt.*;
 
 public class GUI extends JFrame {
 
-    JTextField startAmount;
 
     public GUI() {
 
@@ -39,19 +38,8 @@ public class GUI extends JFrame {
 
         button.addActionListener(e -> {
             frame.dispose();
-            //Game.setVisible(true);
         });
 
-
-        /**
-         startAmount = new JTextField(5);
-         JPanel panel3 = new JPanel();
-         panel3.add(startAmount);
-         panel3.setBackground(Color.decode("#006763"));
-         frame.add(panel3);
-         TextFieldEventHandler handler = new TextFieldEventHandler();
-         startAmount.addActionListener(handler);
-         */
 
         JLabel imageLabel = new JLabel();
         imageLabel.setPreferredSize(new Dimension(740, 270));

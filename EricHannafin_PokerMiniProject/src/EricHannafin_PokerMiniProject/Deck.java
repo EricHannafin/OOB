@@ -2,40 +2,54 @@ package EricHannafin_PokerMiniProject;
 
 import java.util.*;
 
+/**
+ * This class generates, deals, shuffles and prints a deck of cards
+ */
+
 public class Deck {
+
+    /**
+     * Instance Variables
+     */
 
     private ArrayList<Card> deck;
     private ArrayList<Card> hand;
     int firstCard = 0;
 
-    //Create a new deck of cards
-    public Deck () {
+    /**
+     * Method to create a deck of cards.
+     */
+    public Deck() {
         deck = new ArrayList<>();
         for (int i = 0; i <= 3; i++) {
             for (int j = 0; j < 13; j++) {
                 deck.add(new Card(i, j));
             }
         }
-        //Shuffle the deck after it is created using the shuffle collection
-       // Collections.shuffle(deck);
     }
 
-    //Draw the top card from the deck and increment
+    /**
+     * Method that deals the top card from the deck
+     */
     public Card dealCard() {
         return deck.get(firstCard++);
     }
 
-    //add 5 cards from the deck to create hand
-    public List<Card> dealHand(){
+    /**
+     * Method that deals 5 cards from the deck to a hand
+     */
+    public List<Card> dealHand() {
         hand = new ArrayList<>();
-        for(int i=0; i<5; i++){
+        for (int i = 0; i < 5; i++) {
 
             hand.add(deck.get(firstCard++));
         }
         return hand;
     }
 
-    //Method to shuffle deck of cards
+    /**
+     * Method to shuffle a deck of cards
+     */
     public void shuffle() {
         Random rand = new Random();
         for (int i = 0; i < 52; i++) {
@@ -47,8 +61,10 @@ public class Deck {
         }
     }
 
-    //Prints the deck of cards
-    public void printDeck(){
+    /**
+     * Method to print the deck of cards
+     */
+    public void printDeck() {
         System.out.println(deck);
     }
 

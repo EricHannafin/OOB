@@ -1,0 +1,6 @@
+[
+Ace of Clubs, 
+7 of Spades, 
+Queen of Clubs, 
+Ace of Spades, 
+2 of Diamonds]

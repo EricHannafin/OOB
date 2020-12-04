@@ -1,8 +1,12 @@
 package EricHannafin_PokerMiniProject;
 
-public class Card
-{
-
+/**
+ * This class creates a single card object with a suit and a rank
+ */
+public class Card {
+    /**
+     * Instance Variables
+     */
     private int rank;
     private int suit;
 
@@ -10,12 +14,17 @@ public class Card
     private String[] ranks = {"Ace", "King", "Queen", "Jack", "10",
             "9", "8", "7", "6", "5", "4", "3", "2"};
 
-    public Card(int suit, int rank)
-    {
+    /**
+     * Card Constructor
+     */
+    public Card(int suit, int rank) {
         this.suit = suit;
         this.rank = rank;
     }
 
+    /**
+     * Accessors
+     */
     public int getRank() {
         return rank;
     }
@@ -24,8 +33,10 @@ public class Card
         return suit;
     }
 
-    public String toString()
-    {
+    /**
+     * to string method that returns a card object
+     */
+    public String toString() {
         return "\n" + ranks[rank] + " of " + suits[suit];
 
     }
