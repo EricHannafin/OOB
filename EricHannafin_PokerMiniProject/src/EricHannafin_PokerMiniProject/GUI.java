@@ -3,11 +3,6 @@ package EricHannafin_PokerMiniProject;
 import javax.swing.*;
 import java.awt.Color;
 import java.awt.*;
-import java.awt.event.*;
-
-import javax.swing.*;
-import java.awt.*;
-import java.awt.event.*;
 
 public class GUI extends JFrame {
 
@@ -40,6 +35,13 @@ public class GUI extends JFrame {
         panel3.add(button);
         frame.add(panel3);
         setVisible(true);
+
+
+        button.addActionListener(e -> {
+            frame.dispose();
+            //Game.setVisible(true);
+        });
+
 
         /**
          startAmount = new JTextField(5);

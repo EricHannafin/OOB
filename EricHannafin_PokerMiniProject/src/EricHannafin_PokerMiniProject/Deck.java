@@ -32,7 +32,6 @@ public class Deck {
 
             hand.add(deck.get(firstCard++));
         }
-        System.out.println(hand);
         return hand;
     }
 
@@ -47,6 +46,7 @@ public class Deck {
             deck.set(k, temp);
         }
     }
+
     //Prints the deck of cards
     public void printDeck(){
         System.out.println(deck);
