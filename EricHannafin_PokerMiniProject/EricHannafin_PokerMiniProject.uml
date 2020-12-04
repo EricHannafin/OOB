@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>EricHannafin_PokerMiniProject</OriginalElement>
+  <nodes>
+    <node x="18.5" y="0.0">EricHannafin_PokerMiniProject.Card</node>
+    <node x="190.0" y="338.0">EricHannafin_PokerMiniProject.GUI</node>
+    <node x="94.125" y="520.0">EricHannafin_PokerMiniProject.Game</node>
+    <node x="0.0" y="260.0">EricHannafin_PokerMiniProject.Deck</node>
+  </nodes>
+  <notes />
+  <edges />
+  <settings layout="Hierarchic Group" zoom="0.9545454545454546" x="134.5" y="287.0" />
+  <SelectedNodes>
+    <node>EricHannafin_PokerMiniProject.Deck</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
