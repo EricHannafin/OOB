@@ -18,7 +18,6 @@ public class Game {
          */
         Deck deck = new Deck();
         ArrayList hand;
-        int total;
 
         Scanner sc = new Scanner(System.in);
 
@@ -33,7 +32,10 @@ public class Game {
             System.exit(0);
         }
 
-        System.out.println("How much would you like to bet ");
+        System.out.println("How many chips would you like to play with today? ");
+        int total = sc.nextInt();
+
+        System.out.println("How much would you like to bet on this hand ");
         int bet = sc.nextInt();
 
         /**
@@ -44,6 +46,18 @@ public class Game {
         /**
          * Save the generated hand to a file
          */
+
+        /*****************************************************
+         *    Title:  Java Write to File – 4 Ways to Write File in Java
+         * 17 Comments
+         *    Author: Pankaj
+         *    Site owner/sponsor:  https://www.journaldev.com/
+         *    Date:
+         *    Code version:
+         *    Availability:  https://www.journaldev.com/878/java-write-to-file
+         (Accessed 01 December 2020)
+         *    Modified:  Code refactored (Identifiers renamed)
+         *****************************************************/
         File hands = new File("hands.txt");
         try {
             FileWriter saveHand = new FileWriter("hands.txt");

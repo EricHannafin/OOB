@@ -7,6 +7,19 @@ public class Card {
     /**
      * Instance Variables
      */
+
+    /*****************************************************
+     *    Title:  Chapter 12  Arrays of objects
+     *    Author: Samson Wu
+     *    Site owner/sponsor:  https://books.trinket.io/thinkjava/chapter12.html
+     *    Date: 24/1/2020
+     *    Code version:
+     *    Availability:  https://books.trinket.io/thinkjava/chapter12.html
+     (Accessed 24 November 2020)
+     *    Modified:  Code refactored (Identifiers renamed)
+     *****************************************************/
+
+
     private int rank;
     private int suit;
 
