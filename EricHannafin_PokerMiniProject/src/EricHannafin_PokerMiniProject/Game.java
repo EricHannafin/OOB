@@ -18,6 +18,7 @@ public class Game {
          */
         Deck deck = new Deck();
         ArrayList hand;
+        int total;
 
         Scanner sc = new Scanner(System.in);
 
@@ -31,6 +32,10 @@ public class Game {
             System.out.println("Sorry you are too young to play this game");
             System.exit(0);
         }
+
+        System.out.println("How much would you like to bet ");
+        int bet = sc.nextInt();
+
         /**
          * Calling shuffle method
          */
